@@ -1,9 +1,9 @@
 public class MyStack<T> implements MyStackInterface<T>{
     /**
      * Implement a stack in a class called MyStack that uses an array to
-    store data and resizes the array when necessary. All methods should run in constant time,
-    except when the array must be resized (this is still amortized constant time).
-    */
+     store data and resizes the array when necessary. All methods should run in constant time,
+     except when the array must be resized (this is still amortized constant time).
+     */
     private static final int DEFAULT_CAPACITY = 10;
     private T [ ] theItems;
     private int theSize;
@@ -55,7 +55,7 @@ public class MyStack<T> implements MyStackInterface<T>{
      */
     public T pop() {
         if(theSize==0) {
-            throw new NullPointerException();
+            throw new NullPointerException("Stack underflow!!");
         }
         T old = theItems[theSize-1];
         theSize = theSize-1;

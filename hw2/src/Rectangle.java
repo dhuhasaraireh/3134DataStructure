@@ -27,4 +27,8 @@ public class Rectangle implements RectangleInterface, Comparable<Rectangle> {
         }
 
     }
+
+    public String toString() {
+        return Double.toString(length);
+    }
 }
