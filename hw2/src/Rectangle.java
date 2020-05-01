@@ -1,3 +1,5 @@
+import java.util.Queue;
+
 public class Rectangle implements RectangleInterface, Comparable<Rectangle> {
     private double width;
     private double length;
